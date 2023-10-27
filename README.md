@@ -7,6 +7,17 @@ This repository contains:
 * The code.
 * The Makefile.
 
+# Installation
+===============================================
+
+* Clone the repo
+
+> $ git clone git@github.com:Zerorature/Dwt.git
+
+# Build Project
+
+ > make
+
 # How does it work?
 ===============================================
 
@@ -16,17 +27,6 @@ This repository contains:
 * To enter information
 > ./binary
 
-# Installation
-===============================================
-
-* Clone the repo
-
-> $ git clone git@github.com:Zerorature/Dwt.git
-
-* Build Project
-
- > make
- 
  # Languages
 ===============================================
 
