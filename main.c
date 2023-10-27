@@ -15,6 +15,7 @@
 
 char *opening(int ac, char **av)
 {
+    if (av[1][strlen(av[1])-1]!='v') return "nop";
     int fd = open(av[1], O_RDONLY);
     struct stat info;
     stat(av[1], &info);
@@ -74,7 +75,7 @@ int ishin_ashina(char *buffer)
             }
         }
         a = tmp;
-        printf("\n");
+        printf("\n\n");
     }
 }
 
@@ -147,6 +148,7 @@ int main(int ac, char **av)
     }
     else {
         char *buffer = opening(ac, av);
+        if (strcmp(buffer, "nop") == 0) {printf("Mauvais fichier !\n"); return 0;}
         ishin_ashina(buffer);
     }
 }
